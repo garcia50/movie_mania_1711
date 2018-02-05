@@ -6,6 +6,7 @@ describe "As a user" do
       visit '/directors/new'
 
       fill_in "director[name]", with: "Copola"
+      click_on "Create Director"
 
       expect(page).to have_content("Copola")
     end
